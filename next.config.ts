@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   env: {
-    baseUrl: "https://personal-web-next-js.vercel.app",
-    googleVerificationCode: "fdO2HdVpX3wuxI96UgRBzKScYlsmSMveXjT3KNiSbUw", // Masukkan kode dari Google setelah mendaftarkan domain
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL,
+    googleVerificationCode: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION_CODE,
   },
 };
 
